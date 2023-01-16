@@ -1,0 +1,272 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap');
+* {
+  box-sizing: border-box;
+}
+
+header {
+   display: inline;
+}
+
+body {
+   font-family: 'Quicksand', sans-serif;
+   margin: 0;
+   padding: 0;
+}
+
+main {
+  padding: 20px;
+  overflow: auto;
+}
+
+#content {
+  float: left;
+  width: 75%;
+}
+
+aside {
+  float: right;
+  width: 25%;
+}
+
+h2 {
+   color: #050a30;
+}
+ 
+h3 {
+   color: #050a30;
+}
+
+nav {
+   background-color: #ffff;
+   padding: 5px;
+   position: sticky;
+   top: 0;
+
+}
+
+nav a {
+   font-size: 18px;
+   font-weight: 400;
+   text-decoration: none;
+   color: #050a30;
+}
+
+nav .navbar-container #logo{
+   width: 35%;
+}
+
+#logo img{
+   width: 200px;
+}
+
+.navbar-container{
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   padding: 15px;
+}
+
+.navbar {
+   display: flex;
+   gap:  1em;
+}
+
+.navbar a:hover {
+   font-weight: bold;
+   background-color: #DBF2F6;
+}
+
+.myprofile header {
+   text-align: center;
+}
+
+.myprofile img {
+   width: 130px;
+}
+
+table{
+   width: 100%;
+}
+
+.card {
+   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+   border-radius: 5px;
+   padding: 20px;
+   margin-top: 20px;
+}
+
+.card-menu{
+   margin-top: 20px;
+}
+
+nav li {
+   display: inline;
+   list-style-type: none;
+   margin-right: 20px;
+}
+
+footer {
+   padding: 20px;
+   color: white;
+   background-color: #FF6E4E;
+   text-align: center;
+   font-weight: bold;
+}
+
+div .description{
+   display: flex;
+}
+
+img 
+{
+   vertical-align: middle;
+}
+
+.slideshow-container {
+  max-width: 1000px;
+  margin: 4%;
+}
+
+.slidebtn{
+   text-align-last: center;
+}
+
+.prev, .next {
+  cursor: pointer;
+  top: 50%;
+  width: auto;
+  padding: 10px;
+  margin-top: -20px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.5s ease;
+  user-select: none;
+}
+
+.prev, .next{
+  color: #050a30;
+}
+
+.adm img{
+ width:100%; 
+ box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2)
+}
+
+.cus img{
+ width:25%; 
+ margin: 3%;
+}
+
+.bullet{
+   display: inline-block;
+}
+
+.bullets {
+  cursor: pointer;
+  height: 10px;
+  width: 10px;
+  margin: 0 2px;
+  background-color: #FFDAB9;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.5s ease;
+}
+
+.bullets1 {
+  cursor: pointer;
+  height: 10px;
+  width: 10px;
+  margin: 0 2px;
+  background-color: #FFDAB9;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.5s ease;
+}
+
+.active, .bullets:hover {
+  background-color: #050a30;
+}
+
+.dropdown {
+   display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  text-align: left;
+  background-color: #f1f1f1;
+  min-width: 110px;
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 2px 6px;  
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #DBF2F6}
+
+.show {display:block;}
+
+#biodata{
+   text-align: center;
+}
+#biodata a{
+   text-decoration: none;
+}
+
+@media screen and (max-width: 600px) {
+  .navbar {
+    position: absolute;
+    justify-content: center;
+    right: 0;
+    left: 0;
+    text-align: center;
+    padding: 5px 0;
+    background-color: #FF6E4E;
+   }
+   .navbar-container {
+      display: block;
+      text-align: center;
+   }
+   .navbar li{
+      display: inline;
+   }
+   nav .navbar a {
+      font-size: 14px;
+      font-weight: 400;
+      text-decoration: none;
+      color: #050a30;
+   }
+   .dropdown-content {
+     display: none;
+     position: absolute;
+     text-align: left;
+     background-color: #FF6D4D;
+     min-width: 110px;
+     z-index: 1;
+   }
+
+   .dropdown-content a {
+     color: black;
+     padding: 2px 6px;  
+     text-decoration: none;
+     display: block;
+   }
+
+   .dropdown-content a:hover {background-color: #DBF2F6}
+
+   .show {display:block;}
+}
+
+@media screen and (max-width: 1000px) {
+  #content,
+  aside {
+    width: 100%;
+    padding: 0;
+  }
+}
